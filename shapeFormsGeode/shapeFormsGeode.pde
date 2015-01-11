@@ -65,7 +65,6 @@ void draw() {
     mov.read();
   }  
   fill(255);
-//  rect(mouseX,mouseY,50,50);
   lightFalloff(0.7, 0.001, 0.0);
   ambientLight(255, 0, 129);
 

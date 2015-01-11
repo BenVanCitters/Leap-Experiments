@@ -23,8 +23,8 @@ void main(void) {
     float ofsetScale = 0.05*cos(sTm/25.0);
     vec2 snOffs = ofsetScale*vec2(cos(vertTexCoord.y*3.14159),
                            -cos(vertTexCoord.x*3.14159));
-    // Grouping texcoord variables in order to make it work in the GMA 950. See post #13
-    // in this thread:
+  // Grouping texcoord variables in order to make it work in the GMA 950. See post #13
+  // in this thread:
   // http://www.idevgames.com/forums/thread-3467.html
   vec2 tc0 = vertTexCoord.st + vec2(-texOffset.s, -texOffset.t)+snOffs;
   vec2 tc1 = vertTexCoord.st + vec2(         0.0, -texOffset.t)+snOffs;
