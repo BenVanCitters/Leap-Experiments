@@ -103,8 +103,7 @@ class Geode {
     float _bright = map(_noise, _noiseMin, _noiseMax, brightness(fillColorLower), brightness(fillColorUpper));
     float _alpha = map(_noise, _noiseMin, _noiseMax, alpha(fillColorLower), alpha(fillColorUpper)); 
 
-    color _fill = color(_hue, _sat, _bright,_alpha);
-    //println(_fill );
+    color _fill = color(255);
     return _fill;
   }
 } 
